@@ -1,0 +1,41 @@
+<br>
+<form name="vm.employeeForm" class="container-fluid"
+      ng-submit="vm.employeeForm.$valid && vm.submit()" novalidate>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <md-input-container class="md-block">
+                            <input type="text" name="employeeName" ng-required="true" placeholder="Enter employee name"
+                                   ng-model="vm.employeeModel.employeeName">
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <md-input-container class="md-block">
+                            <input type="text" name="employeeCity" ng-required="true" placeholder="Enter employee city"
+                                   ng-model="vm.employeeModel.employeeCity">
+                        </md-input-container>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <md-button class="long">Cancel</md-button>
+                        <md-button class="md-raised md-primary long" type="submit">SUBMIT</md-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>
